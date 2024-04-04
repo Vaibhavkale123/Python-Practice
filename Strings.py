@@ -220,8 +220,36 @@ for e,v in f.items():
     print(f"{e},{v}")
 
 
-'''
 my_dict = {'a': 1, 'b': 2}
 # my_dict.update({'b': 3})  # Adds 'c': 3
 my_dict.setdefault('b', 4)  # Adds 'd': 4
 print(my_dict)
+
+
+# Write a Python program to read a given string.
+#  If the first or last characters are the same, return the string without those characters;
+#  otherwise, return the string unchanged.
+#     Sample Output:
+#     The given string is: testcricket
+#     The new string is: estcricke
+
+s=input("Enter a string:")
+f=s[0]
+l=s[-1]
+if f==l:
+    print(s[1:-1])
+else:
+    print(s)
+'''
+
+
+# Write a Python program to create a new string by repeating every character twice in a given string.
+#     Sample Output:
+#     The given string is: welcome
+#     The new string is: wweellccoommee
+
+s="welcome"
+
+for i in s:
+    print(i+i,end="")
+
